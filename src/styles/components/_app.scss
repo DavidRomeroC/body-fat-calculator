@@ -1,0 +1,236 @@
+    .app__main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        height: 100vh;
+        width: 1200px;
+        color: white;
+
+        .app__head {
+            background-color: #8667F0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+
+            div {
+                margin-left: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 220px;
+
+                .app__img-logo {
+                    filter: invert(100%);
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+
+            .app__img-more {
+                filter: invert(100%);
+                height: 40px;
+                width: 40px;
+                margin-right: 25px;
+            }
+        }
+
+        .app__section-container {
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            height: 870px;
+            border-radius: 0 0 20px 20px;
+
+            .app__form-container {
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+                height: 100%;
+
+                .app__description {
+                    width: 600px;
+
+                    h4 {
+                        margin: 45px;
+                        font-size: 35px;
+                    }
+
+                    p {
+                        margin: 45px;
+                        font-size: 13px;
+                        color: gray;
+                    }
+                }
+
+                .app__form {
+                    margin-left: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    font-size: 13px;
+
+                    .app__input-radio {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 10px;
+
+                        div {
+                            display: flex;
+                            flex-direction: row;
+                        }
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            margin-bottom: 10px;
+                        }
+
+                        .app__input {
+                            width: 500px;
+                            height: 20px;
+                            border-radius: 20px;
+                            padding: 7px;
+                            background-color: transparent;
+                            border: 1px solid gray;
+                            margin-bottom: 20px;
+                            color: white;
+                            font-size: 19px;
+                        }
+                    }
+
+                    .app__button-container {
+                        display: flex;
+                        flex-direction: row;
+                        height: 35px;
+                        width: 210px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 10px;
+
+                        button {
+                            width: 80px;
+                            border-radius: 20px;   
+                        }
+                        .app__button-submit {
+                            background-color: #8767f0;
+                            color: white;
+                        }
+                        .app__button-reset {
+                            background-color: transparent;
+                            color: white;
+
+                            &:hover {
+                                background-color: white;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .app__results-container {
+                width: 600px;
+                height: 850px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 0;
+                background-color: black;
+                display: flex;
+                margin-left: 100px;
+
+                h2 {
+                    display: flex;
+                }
+
+
+                .app__bar-main-content {
+
+                    width: 400px;
+                    height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    .app__bar-arrow {
+                        display: flex;
+                        flex-direction: column;
+                        height: 75px;
+
+                        .app__bar-content {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+
+                            img {
+                                height: 25px;
+                                width: 25px;
+                                filter: invert(100%);
+                            }
+                        }
+                    }
+
+                    .app__bar-graphic {
+                        height: 95px;
+                        width: 400px;
+                        background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(50, 172, 18, 1) 30%, rgba(185, 183, 20, 1) 61%, rgba(121, 61, 9, 1) 100%);
+                        border-radius: 7px;
+                    }
+
+                    .app__bar-scale {
+                        width: 400px;
+                        height: 60px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        font-size: 12px;
+
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            div {
+                                border-radius: 5px;
+                                height: 10px;
+                                width: 10px;
+                                border: 1px solid white;
+                            }
+
+                            .blue {
+                                background: rgb(0, 212, 255);
+                            }
+
+                            .green {
+                                background: rgb(50, 172, 18);
+                            }
+
+                            .lime {
+                                background: rgb(185, 183, 20);
+                            }
+
+                            .yellow {
+                                background: yellow;
+                            }
+
+                            .red {
+                                background: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
